@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Book marker</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-muted mb-5">Bookmarker</h2>
+      <hr />
+      <div class="item text-center py-5 my-5">
+        <form action="">
+          <h3 class="mb-5">Bookmark your favorite sites</h3>
+          <div class="my-4 w-75 m-auto">
+            <label for="siteName" class="form-label fw-bold">Site Name </label>
+            <input
+              type="text"
+              class="form-control site-name"
+              id="siteName"
+              placeholder="Bookmark name"
+              autocomplete="off"
+            />
+            <div class="invalid-feedback invalid-name text-start"></div>
+          </div>
+          <div class="my-4 w-75 m-auto">
+            <label for="siteURL" class="form-label fw-bold">Site URL</label>
+            <input
+              type="text"
+              class="form-control site-url"
+              id="siteURL"
+              placeholder="Bookmark url"
+              autocomplete="off"
+            />
+            <div class="invalid-feedback invalid-url text-start"></div>
+          </div>
+          <button class="btn btn-primary submit-btn" type="submit">
+            Add site
+          </button>
+        </form>
+      </div>
+      <table class="table text-center m-auto"></table>
+      <hr />
+      <footer class="text-muted">&copy; 2021 Bookmarker Inc.</footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
